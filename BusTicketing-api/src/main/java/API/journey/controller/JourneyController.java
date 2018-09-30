@@ -63,7 +63,7 @@ public class JourneyController {
 	}
 	
 	
-	@CrossOrigin(origins = {"http://localhost:8080", "http://localhost:3000"})
+	@CrossOrigin(origins = {"http://localhost:8080", "http://localhost:3001"})
 	@RequestMapping(value = "/startbus", method = RequestMethod.POST)
 	public void StartJourney(@Validated @RequestBody Journey journeyIns){
 		try {
@@ -73,7 +73,7 @@ public class JourneyController {
 		}
 	}
 	
-	@CrossOrigin(origins = {"http://localhost:8080", "http://localhost:3000"})
+	@CrossOrigin(origins = {"http://localhost:8080", "http://localhost:3001"})
 	@RequestMapping(value = "/endbus", method = RequestMethod.PUT)
 	public void EndJourney(@Validated @RequestBody Journey journeyIns){
 		try {
